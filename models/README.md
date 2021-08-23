@@ -1,0 +1,1 @@
+In this folder all machine learning models will be saved. One for each erg

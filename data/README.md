@@ -1,0 +1,1 @@
+In this folder all .csv files needed to train the machine learning algorithm will be saved
