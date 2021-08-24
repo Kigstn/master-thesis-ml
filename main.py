@@ -10,9 +10,7 @@ def get_use_case_response(use_case_id: int, use_case_step: int, user_emotion: st
     Returns five erg, which are evaluated by a ml algorithm (once enough data is present)
     """
 
-    # make sure the args are valid
-    assert use_case_id in [1, 2, 3, 4]
-    assert use_case_step in [1, 2]
+    # make sure the emotions are valid
     assert user_emotion in ["happy", "angry", "anxious", "embarrassed", "relaxed", "sad"]
     assert user_emotion_reason in ["retail", "not retail"]
 
@@ -35,8 +33,6 @@ def update_ml_model(use_case_id: int, use_case_step: int, user_emotion: str, use
     """
 
     # make sure the args are valid
-    assert use_case_id in [1, 2, 3, 4]
-    assert use_case_step in [1, 2]
     assert user_emotion in ["happy", "angry", "anxious", "embarrassed", "relaxed", "sad"]
     assert user_emotion_reason in ["retail", "not retail"]
 
